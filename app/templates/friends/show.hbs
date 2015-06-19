@@ -3,6 +3,7 @@
 	<p>Last Name: {{model.lastName}}</p>
 	<p>Email: {{model.email}}</p>
 	<p>Twitter: {{model.twitter}}</p>
+	<p>{{link-to 'Lend Article' 'articles.new'}}</p>
 	<p>{{link-to 'Edit' 'friends.edit' model.id}}</p>
 	<p><a href="#" {{action "delete" model.id}}>Delete</a></p>
 </div>
