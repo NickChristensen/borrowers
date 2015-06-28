@@ -14,12 +14,12 @@ export default Ember.Controller.extend({
 	actions: {
 		save: function() {
 			if(this.get('isValid')) {
-				var controller = this
+				var controller = this;
 				this.get('model').save().then(function(friend) {
-					controller.transitionToRoute('articles', friend)
-				})
+					controller.transitionToRoute('articles', friend);
+				});
 			} else {
-				this.set('errorMessage', 'You have to fill all the fields')
+				this.set('errorMessage', 'You have to fill all the fields');
 			}
 		}
 	}

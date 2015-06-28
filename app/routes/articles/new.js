@@ -4,28 +4,28 @@ export default Ember.Route.extend({
 	model: function() {
 		return this.store.createRecord('article', {
 			friend: this.modelFor('friends/show')
-		})
+		});
 	},
 
 	actions: {
 		save: function() {
-			var route = this
-			var model = this.modelFor('articles/new')
+			var route = this;
+			var model = this.modelFor('articles/new');
 
 			model.save().then(function(){
-				route.transitionTo('articles')
-			})
+				route.transitionTo('articles');
+			});
 		},
 		cancel: function() {
-			this.transitionTo('articles')
+			this.transitionTo('articles');
 		}
 	},
 
 	deactivate: function() {
-		var model = this.modelFor('articles/new')
+		var model = this.modelFor('articles/new');
 
 		if(model.get('isNew')) {
-			model.destroyRecord()
+			model.destroyRecord();
 		}
 	}
 

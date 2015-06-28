@@ -4,10 +4,10 @@ export default Ember.Controller.extend({
 	actions: {
 		save: function() {
 			if (!Ember.isEmpty(this.get('model.description'))){
-				return true
+				return true;
 			} else {
-				this.set('errorMessage', 'You need at least a description')
-				return false
+				this.set('errorMessage', 'You need at least a description');
+				return false;
 			}
 		}
 	}
