@@ -15,6 +15,3 @@
 /libpeerconnection.log
 npm-debug.log
 testem.log
-
-# added by GitSavvy
-/.sublime-project.sublime-workspace
