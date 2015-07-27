@@ -2,7 +2,13 @@
 <td>{{article.notes}}</td>
 <td>{{formatted-date article.createdAt 'LL'}}</td>
 <td>
-	{{view "select" content=articleStates selection=article.state}}
+	{{#x-select value="article.state"}}
+		{{#each articleStates as |state|}}
+			{{#x-option value=state}}
+				{{state}}
+			{{/x-option}}
+		{{/each}}
+	{{/x-select}}
 </td>
 <td>
 	{{#if article.isSaving}}
