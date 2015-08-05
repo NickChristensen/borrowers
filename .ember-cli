@@ -5,5 +5,8 @@
 
     Setting `disableAnalytics` to true will prevent any data from being sent.
   */
-  "disableAnalytics": false
+  "disableAnalytics": false,
+  "port": 4242,
+  "live-reload-port": 35731,
+  "proxy": "http://api.ember-cli-101.com"
 }
