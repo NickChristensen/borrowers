@@ -1,15 +1,26 @@
 body {
-	/*display: block;*/
-	color: #333;
-	background: #fff;
-	margin: 80px auto;
-	/*width: 100%;*/
+  color: #333;
+  background: #fff;
+  margin: 80px auto;
 }
 
 table {
-	width: 100%;
+  width: 100%;
 }
 
 .burger {
-	display: none;
+  display: none;
+}
+
+.friend-profile {
+  text-align: left;
+}
+
+.friend-profile img {
+  float: left;
+  margin: 0em 2em 1em 1em;
+}
+
+.friend-profile-links li {
+  padding-right: 20px;
 }
