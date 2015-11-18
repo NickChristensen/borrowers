@@ -12,6 +12,10 @@ table {
   display: none;
 }
 
+.friends-table th{
+  cursor: pointer;
+}
+
 .friend-profile {
   text-align: left;
 }
