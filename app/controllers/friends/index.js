@@ -3,7 +3,7 @@ import Ember from 'ember';
 export default Ember.Controller.extend({
   queryParams: ['sortBy', 'sortAscending'],
   sortBy: 'firstName',
-  sortAscending: true,
+  sortAscending: false,
   
   actions: {
     setSortBy(fieldName) {
@@ -15,9 +15,6 @@ export default Ember.Controller.extend({
       }
 
       this.set('sortBy', fieldName);
-
-      console.log('Sorting By: ', fieldName);
-      console.log('Sorting Ascending: ', this.get('sortAscending'));
     }
   }
   
