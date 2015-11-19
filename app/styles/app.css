@@ -16,6 +16,20 @@ table {
   cursor: pointer;
 }
 
+.friends-table th::after {
+  margin-left: 8px;
+  font-size: 50%;
+  vertical-align: 2px;
+}
+
+.friends-table th.sort-asc::after {
+  content: '▲';
+}
+
+.friends-table th.sort-desc::after {
+  content: '▼';
+}
+
 .friend-profile {
   text-align: left;
 }
