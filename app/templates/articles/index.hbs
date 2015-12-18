@@ -1,3 +1,6 @@
+<label>
+  {{input type="checkbox" checked=showReturned}} <span class="checkable">Show returned items</span>
+</label>
 <table class="primary">
 	<thead>
 		<tr>
@@ -8,7 +11,7 @@
 		</tr>
 	</thead>
 	<tbody>
-		{{#each model as |article|}}
+		{{#each filteredResults as |article|}}
 			{{articles/article-row  article=article save="save" articleStates=possibleStates}}
 		{{/each}}
 	</tbody>
