@@ -6,7 +6,7 @@ export default Ember.Controller.extend({
   
   showReturned: false,
   
-  filteredResults: Ember.computed('showReturned', 'model', function() {
+  filteredResults: Ember.computed('showReturned', 'model.@each.state', function() {
     if( this.get('showReturned') ) {
       return this.get('model');
     } else {
